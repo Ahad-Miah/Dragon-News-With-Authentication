@@ -11,9 +11,13 @@ const Middle = () => {
         <div>
            <h1 className='font-bold text-left text-gray-600'>Dragon news Home</h1>
 
+           <div>
            {
             newses.map(news => <News news={news}></News>)
            }
+           </div>
+
+         
         </div>
     );
 };
