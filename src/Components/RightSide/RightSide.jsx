@@ -4,6 +4,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
 import swimming from "../../assets/swimming.png"
 import Class from "../../assets/class.png"
 import playground from "../../assets/playground.png"
+import add from "../../assets/bg.png"
 
 const RightSide = () => {
     return (
@@ -22,7 +23,7 @@ const RightSide = () => {
                 <button className="btn justify-start join-item"> <FaInstagram />Instagram</button>
             </div>
 
-            <div className="bg-base-300 p-3">
+            <div className="bg-base-300 p-3 mt-6">
                 <h1 className="text-gray-700 font-bold text-left">Q-Zone</h1>
 
                 <div className="flex flex-col gap-3">
@@ -32,7 +33,9 @@ const RightSide = () => {
                     <img src={playground} alt="" />
 
                 </div>
-
+            </div>
+            <div className="mt-4 *:w-full">
+                <img src={add} alt="" />
             </div>
 
 

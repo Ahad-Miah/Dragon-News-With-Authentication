@@ -5,7 +5,6 @@ import News from '../News/News';
 const Middle = () => {
 
     const {data:newses} =useLoaderData();
-    console.log(newses);
 
     return (
         <div>

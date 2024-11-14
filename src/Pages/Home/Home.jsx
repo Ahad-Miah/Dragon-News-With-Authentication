@@ -15,7 +15,7 @@ const Home = () => {
             <nav>
                 <Navbar></Navbar>
             </nav>
-            <main className='grid grid-cols-12 gap-6 pt-4'>
+            <main className='grid md:grid-cols-12 gap-6 pt-4'>
             <aside className='col-span-3'>
                <LeftSide></LeftSide>
             </aside>

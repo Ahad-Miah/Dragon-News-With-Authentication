@@ -1,9 +1,11 @@
 import React from 'react';
 import { FaShareAlt, FaStar, FaEye } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const News = ({ news }) => {
   return (
-    <div className="card  bg-base-100 shadow-xl">
+    <NavLink to={`/details/${news._id}`}>
+      <div className="card  bg-base-100 shadow-xl">
       <div className="flex justify-between items-center px-4 pt-4">
         <div className="flex items-center space-x-3">
           <img src={news.author.img} alt={news.author.name} className="w-10 h-10 rounded-full" />
@@ -34,6 +36,7 @@ const News = ({ news }) => {
         </div>
       </div>
     </div>
+    </NavLink>
   );
 };
 

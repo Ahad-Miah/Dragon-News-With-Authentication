@@ -3,6 +3,7 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Career from "../Pages/Career/Career";
 import Middle from "../Components/Middle/Middle";
+import Details from "../Components/Details/Details";
 
 
 const Router =createBrowserRouter([
@@ -28,6 +29,11 @@ const Router =createBrowserRouter([
         {
             path:'career',
             element:<Career></Career>
+        },
+        {
+            path:'details/:id',
+            element: <Details></Details>,
+            loader: ({params})=> fetch(`https://openapi.programming-hero.com/api/news/${params.id}`)
         }
 
 ])
